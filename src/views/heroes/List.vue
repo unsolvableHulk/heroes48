@@ -18,7 +18,7 @@
             <td>{{ item.name }}</td>
             <td>
             <td>{{ item.gender }}</td>
-              <a href="edit.html">edit</a>
+              <router-link :to="'/heroes/' + item.id">edit</router-link>
               &nbsp;&nbsp;
               <a href="javascript:window.confirm('Are you sure?')">delete</a>
             </td>
